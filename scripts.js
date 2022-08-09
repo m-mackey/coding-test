@@ -33,3 +33,31 @@ depositInput.addEventListener('submit', (e) => {
   totalSaved.textContent = showNewTotal;
   checkTotals();
 });
+
+// get shoe section and add click event
+const shoeList = document.getElementsByClassName('shoes');
+for (let i = 0; i < shoeList.length; i++) {
+  shoeList[i].addEventListener('click', shoePicker);
+  // adds id to each shoe for styling based on button text so it doesn't have to be hardcoded. can be removed for manual coding of each id
+  shoeList[i].setAttribute('id', shoeList[i].textContent);
+}
+
+// puts shoe on the tama
+function shoePicker() {
+  const currentShoe = this.textContent;
+  document.getElementById('tama-shoes').innerHTML = currentShoe;
+}
+
+// get hat section and add click event
+const hatList = document.getElementsByClassName('hats');
+for (let i = 0; i < hatList.length; i++) {
+  hatList[i].addEventListener('click', hatPicker);
+  // adds id to each hat for styling based on button text so it doesn't have to be hardcoded. can be removed for manual coding of each id
+  hatList[i].setAttribute('id', hatList[i].textContent);
+}
+
+// puts shoe on the tama
+function hatPicker() {
+  const currentHat = this.textContent;
+  document.getElementById('tama-hat').innerHTML = currentHat;
+}

@@ -12,6 +12,8 @@
     <header>
         <h1>Like Tamagotchi But Powered By Your Savings Account</h1>
     </header>
+    <p id="instructions">Keep your Tama alive by making regular deposits towards your savings goals. Earn points and buy
+        them cool hats and sick shoes!</p>
 
     <main id="wrapper">
 
@@ -23,6 +25,8 @@
                 <input type="number" name="goalAmount" id="goalAmount">
                 <input type="submit" value="Submit">
             </form>
+
+            <!-- add something that says like 'you did it' when saveed amount matches -->
         </section>
 
         <section>
@@ -42,20 +46,22 @@
         <section id="tama-store">
             <h2>Tama Store</h2>
             <h3 id="tama-points">Total Tama Points:</h3>
+            <!-- add tama points and math 
+            add cost to items-->
             <div id="hats">
                 <h4>Hats</h4>
                 <ul>
-                    <li><button>cowboy</button></li>
-                    <li><button>baseball</button></li>
-                    <li><button>sun</button></li>
+                    <li><button class="hats">cowboy</button></li>
+                    <li><button class="hats">baseball</button></li>
+                    <li><button class="hats">sun</button></li>
                 </ul>
             </div>
             <div id="shoes">
                 <h4>Shoes</h4>
                 <ul>
-                    <li><button>cowboy</button></li>
-                    <li><button>sneakers</button></li>
-                    <li><button>sandals</button></li>
+                    <li><button class="shoes">cowboy</button></li>
+                    <li><button class="shoes">sneakers</button></li>
+                    <li><button class="shoes">sandals</button></li>
                 </ul>
             </div>
         </section>

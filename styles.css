@@ -1,0 +1,16 @@
+*, 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#tama-body {
+    width: 5rem;
+    height: 5rem;
+    background-color: green;
+}

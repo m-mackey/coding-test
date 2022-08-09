@@ -3,6 +3,7 @@ const goal = document.getElementById('goal');
 const depositInput = document.getElementById('deposit-input');
 const totalSaved = document.getElementById('total-saved');
 
+// Submits amount to be saved and displays it
 goalInput.addEventListener('submit', (e) => {
   e.preventDefault();
   const money = this.goalAmount.value;
@@ -22,6 +23,7 @@ function checkTotals() {
   }
 }
 
+// Submits amount user deposits, adds it to total saved, and runs checkTotals which compares Total Saved to Savings Goal
 depositInput.addEventListener('submit', (e) => {
   e.preventDefault();
   const depositAmount = Number(this.depositAmount.value);
@@ -31,5 +33,3 @@ depositInput.addEventListener('submit', (e) => {
   totalSaved.textContent = showNewTotal;
   checkTotals();
 });
-
-// maybe put amount to save in localstorage so it doesnt reset on load when u update

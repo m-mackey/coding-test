@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Like Tamagotchi But Powered By Your Savings Account</h1>
     </header>
 
     <main id="wrapper">
 
         <section>
-            <p>Amount to save:
-            <div id="goal">0</div>
-            </p>
+            <h2>Amount to save:
+                <div id="goal">0</div>
+            </h2>
             <form action="" id="goal-input">
                 <input type="number" name="goalAmount" id="goalAmount">
                 <input type="submit" value="Submit">
@@ -26,13 +26,13 @@
         </section>
 
         <section>
-            <p>Total Saved:
-            <div id="total-saved">0</div>
-            </p>
+            <h2>Total Saved:
+                <div id="total-saved">0</div>
+            </h2>
         </section>
 
         <section>
-            <p>Amount to deposit:</p>
+            <h2>Amount to deposit:</h2>
             <form action="" id="deposit-input">
                 <input type="number" name="depositAmount" id="depositAmount">
                 <input type="submit" value="Submit">
@@ -40,12 +40,28 @@
         </section>
 
         <section id="tama-store">
-            <p id="tama-points">Total Tama Points:</p>
-            <div id="hats"></div>
-            <div id="shoes"></div>
+            <h2>Tama Store</h2>
+            <h3 id="tama-points">Total Tama Points:</h3>
+            <div id="hats">
+                <h4>Hats</h4>
+                <ul>
+                    <li><button>cowboy</button></li>
+                    <li><button>baseball</button></li>
+                    <li><button>sun</button></li>
+                </ul>
+            </div>
+            <div id="shoes">
+                <h4>Shoes</h4>
+                <ul>
+                    <li><button>cowboy</button></li>
+                    <li><button>sneakers</button></li>
+                    <li><button>sandals</button></li>
+                </ul>
+            </div>
         </section>
 
         <section id="tama">
+            <h2>Your Tama</h2>
             <div id="tama-hat"></div>
             <div id="tama-body"></div>
             <div id="tama-shoes"></div>

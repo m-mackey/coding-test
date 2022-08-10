@@ -17,34 +17,51 @@
 
     <main id="wrapper">
 
-        <section>
-            <h2>Amount to save:
-                <div id="goal">0</div>
-            </h2>
-            <form action="" id="goal-input">
-                <input type="number" name="goalAmount" id="goalAmount">
-                <input type="submit" value="Submit">
-            </form>
+        <div id="money">
+            <section>
+                <!-- Make all inputs inline/just look a little nicer -->
+                <h2>Savings Goal:
+                    <div id="goal">0</div>
+                </h2>
+                <form action="" id="goal-input">
+                    <!-- Add label for form input -->
+                    <input type="number" name="goalAmount" id="goalAmount" min="0">
+                    <input type="submit" value="Submit">
+                    <!-- make input disappear upon submission but do allow edits -->
+                </form>
 
-            <!-- add something that says like 'you did it' when saveed amount matches -->
+                <!-- add something that says like 'you did it' when saveed amount matches -->
+            </section>
+
+            <section>
+                <h2>Total Saved Towards Goal:
+                    <div id="total-saved">0</div>
+                    <!-- when total saved meets goal met, make something fun happen -->
+                </h2>
+            </section>
+
+            <section>
+                <h2>Amount to deposit:</h2>
+                <form action="" id="deposit-input">
+                    <!-- Add label for form input -->
+                    <input type="number" name="depositAmount" id="depositAmount" min="0">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+
+        <section id="tama">
+            <!-- Eventually make tama more than just a box, maybe customizable or give users several to pick from -->
+            <h2>Your Tama</h2>
+            <div id="tama-hat"></div>
+            <div id="tama-body"></div>
+            <div id="tama-shoes"></div>
         </section>
 
-        <section>
-            <h2>Total Saved:
-                <div id="total-saved">0</div>
-            </h2>
-        </section>
-
-        <section>
-            <h2>Amount to deposit:</h2>
-            <form action="" id="deposit-input">
-                <input type="number" name="depositAmount" id="depositAmount">
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <!-- add tama inventory, ability to remove items -->
 
         <section id="tama-store">
-            <h2>Tama Store</h2>
+            <h2 id="store-title">Tama Store</h2>
             <h3 id="tama-points">Total Tama Points:</h3>
             <!-- add tama points and math 
             add cost to items-->
@@ -66,12 +83,7 @@
             </div>
         </section>
 
-        <section id="tama">
-            <h2>Your Tama</h2>
-            <div id="tama-hat"></div>
-            <div id="tama-body"></div>
-            <div id="tama-shoes"></div>
-        </section>
+
 
 
     </main>

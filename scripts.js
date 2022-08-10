@@ -13,15 +13,16 @@ goalInput.addEventListener('submit', (e) => {
   goal.textContent = display;
 });
 
-function checkTotals() {
-  const currentGoal = Number(goal.textContent);
-  const currentSaved = Number(totalSaved.textContent);
-  if (currentGoal === currentSaved) {
-    console.log('match');
-  } else {
-    console.log('no match');
-  }
-}
+// change this fn to do something fun when goal and saved amounts match
+// function checkTotals() {
+//   const currentGoal = Number(goal.textContent);
+//   const currentSaved = Number(totalSaved.textContent);
+//   if (currentGoal === currentSaved) {
+//     console.log('match');
+//   } else {
+//     console.log('no match');
+//   }
+// }
 
 // Submits amount user deposits, adds it to total saved, and runs checkTotals which compares Total Saved to Savings Goal
 depositInput.addEventListener('submit', (e) => {
@@ -31,7 +32,7 @@ depositInput.addEventListener('submit', (e) => {
   const showNewTotal = `${newTotal}`;
   console.log(showNewTotal);
   totalSaved.textContent = showNewTotal;
-  checkTotals();
+  // checkTotals();
 });
 
 // get shoe section and add click event

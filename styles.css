@@ -4,6 +4,60 @@
     box-sizing: border-box;
 }
 
+/* layout */
+#wrapper {
+    /* mobile first layout */
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+    width: 100vw;
+    align-items: center;
+}
+
+
+@media (min-width: 50rem){
+    /* when display is over a certain size */
+    /* everything needs to be more centered and nicely organized */
+    #wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "money tama"
+        "money tama"
+        "tama-store tama-store";
+    }
+    #money {
+        grid-area: money;
+       }
+    #tama {
+        grid-area: tama;
+    }
+    #store-title {
+        grid-area: store-title;
+    }
+    #tama-points {
+        grid-area: tama-points;
+    }
+    #hats{
+        grid-area: hats;
+    
+    }
+    #shoes {
+        grid-area: shoes;
+    }
+    #tama-store {
+        grid-area: tama-store;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "store-title store-title"
+        "tama-points tama-points"
+        "hats shoes";
+    }
+}
+
+
+/* just styles */
 ul {
     list-style: none;
     padding-left: 0;
